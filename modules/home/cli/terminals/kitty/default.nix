@@ -29,7 +29,6 @@ in {
         url_style = "none";
         underline_hyperlinks = "never";
         copy_on_select = "clipboard";
-        text_composition_strategy = "legacy";
       };
     };
   };
