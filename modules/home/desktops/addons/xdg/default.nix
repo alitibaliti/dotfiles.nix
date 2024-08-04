@@ -25,7 +25,7 @@ in {
       mimeApps = {
         enable = true;
         associations.added = {
-          "video/mp4" = ["or.gnome.Totem.desktop"];
+          "video/mp4" = ["org.gnome.Totem.desktop"];
           "video/quicktime" = ["org.gnome.Totem.dekstop"];
           "video/webm" = ["org.gnome.Totem.dekstop"];
           "image/gif" = ["org.gnome.Loupe.desktop"];
