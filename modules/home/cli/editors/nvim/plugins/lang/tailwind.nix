@@ -21,6 +21,7 @@
       lsp.servers = {
         tailwindcss = {
           enable = true;
+          filetypes = ["html"];
         };
       };
     };

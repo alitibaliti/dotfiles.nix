@@ -20,6 +20,14 @@ in {
 
   programs.nixvim = {
     files = {
+      "ftplugin/templ.lua" = {
+        opts = {
+          expandtab = true;
+          shiftwidth = 4;
+          tabstop = 4;
+        };
+      };
+
       "ftplugin/go.lua" = {
         opts = {
           expandtab = true;
