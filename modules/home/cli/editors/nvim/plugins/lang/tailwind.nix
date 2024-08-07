@@ -1,9 +1,4 @@
-{
-  inputs,
-  pkgs,
-  config,
-  ...
-}: {
+{pkgs, ...}: {
   programs.nixvim = {
     plugins = {
       conform-nvim = {
@@ -21,7 +16,14 @@
       lsp.servers = {
         tailwindcss = {
           enable = true;
-          filetypes = ["html"];
+          filetypes = ["html" "templ"];
+          settings = {
+            tailwindCSS = {
+              includeLanguages = {
+                templ = "html";
+              };
+            };
+          };
         };
       };
     };
