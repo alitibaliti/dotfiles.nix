@@ -11,13 +11,13 @@ in {
   };
 
   config = mkIf cfg.enable {
-    servives = {
+    services = {
       bazarr.enable = true;
       lidarr.enable = true;
       radarr.enable = true;
       prowlarr.enable = true;
       jellyseerr.enable = true;
-      jellyfin.eable = true;
+      jellyfin.enable = true;
       sonarr.enable = true;
     };
   };
