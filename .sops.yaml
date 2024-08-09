@@ -19,6 +19,7 @@ keys:
   - &users:
     - &haseeb_workstation age1emuknmcdwt5letup4eatvjxrrllkd06uqhslvzhwr0jkjj9f8ewquz9xur
     - &haseebmajid_curve age1rc26esy506fa0kv2y97sjzfk4g2pr0ctv2rzkacewx5d8urns3zqhr7r7n
+    - &dt_z1 age12l4rqaeanf85csul5eh8mgw40n8xta27qd9fyy7h68z2h7gh7pws3reqew
   - &hosts:
     - &framework age1kzxen8ynw28h935jnjc9t8cx4p8mv6angk5suvkp6ntu4am9pe4smfw22z
     - &workstation age1fy626vylmpya4t4gyqx6kw4ggn7j79upjgt4jka2gq6lysluhd0s8ytqls
@@ -26,6 +27,7 @@ keys:
     - &um790 age1wtkcl8gwwumvzf78ttqy4gh2pwzz724glugs5wah2fcudgfh5pxq3urkpg
     - &ms01 age1uswlqzs3pf99r6e8qq5d3eh44sufe5tdczmfqygeam7vfr96fugqa0pps7
     - &s100 age19pl6jt7ekljfjww4g9anzafdxj0e52mnfnsyd26u5xdemfksqpwsnfwrs5
+    - &z1 age1c2ys7wxltshz6nya37ze9zu67mperdmwsrl76eaz4asfflxg2e4qxlz4wc
 
 creation_rules:
   - path_regex: modules/nixos/roles/kubernetes/secrets.ya?ml$
@@ -37,6 +39,7 @@ creation_rules:
       - *um790
       - *ms01
       - *haseeb_workstation
+      - *z1
 
   - path_regex: modules/nixos/secrets.ya?ml$
     key_groups:

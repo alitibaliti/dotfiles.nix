@@ -8,9 +8,9 @@ with lib.nixicle; let
   cfg = config.user;
 in {
   options.user = with types; {
-    name = mkOpt str "haseeb" "The name of the user's account";
+    name = mkOpt str "dt" "The name of the user's account";
     initialPassword =
-      mkOpt str "1"
+      mkOpt str "11"
       "The initial password to use";
     extraGroups = mkOpt (listOf str) [] "Groups for the user to be assigned.";
     extraOptions =

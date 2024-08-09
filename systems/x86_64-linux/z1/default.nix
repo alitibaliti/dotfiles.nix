@@ -5,7 +5,7 @@
 }: {
   imports = [
     ./hardware-configuration.nix
-    ./disks.nix
+    # ./disks.nix
   ];
 
   services = {
